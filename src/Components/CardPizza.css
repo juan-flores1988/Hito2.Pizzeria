@@ -1,0 +1,42 @@
+.productos{
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,15.15);
+}
+ 
+.productos h4{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+
+
+.ingredientes{
+text-align: center;
+    border-top: 1px solid #dbd8d8;
+    border-bottom: solid #dbd8d8 ;
+}
+
+.ingredientes p{
+    color: rgb(133, 131, 131);
+}
+
+
+.precio{
+    text-align: center;
+ 
+
+}
+
+.precio button{
+    margin: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.button-background{
+    background-color: rgb(43, 42, 42) ;
+    color: white;
+}
+
+
