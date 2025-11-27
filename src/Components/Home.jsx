@@ -2,26 +2,30 @@ import CardPizza from "./CardPizza"
 import Header from "./Header"
 import "./Home.css"
 import "./CardPizza.css"
+import { pizzas } from "../pizzas"
+import { useState } from "react"
 
+import React from 'react'
 
 const Home = () => {
   return (
-        <>
-         <div className="box-Home">
-            <div className="text">
-    <h1>¡Pizzeria Mamma Mia!</h1>
-    <h3>¡Tenemos las mejores pizza que podras encontrar!</h3>
-    </div>
     
-    </div> 
+    <div className="home-cards">
 
-<div className="home-card">
- <CardPizza imagen="/public/Napolitana.jpg" titulo=" Pizza Napolitana" ingredientes="🍕Mozzarella, tomate, oregano" precio= "Precio: $5.950"/>
- <CardPizza imagen="/public/Española.jpg" titulo="Pizza Española" ingredientes="🍕Mozzarella, gorgonzola, provolone" precio="Precio: $6.950"/>
- <CardPizza imagen="/public/Pepperoni.jpg" titulo="Pizza Pepperoni" ingredientes="🍕Mozzarella, pepperoni, oregano" precio="Precio: $6.950"/>
- </div>
+{pizzas.map((pizza) => (
+  <CardPizza 
+  img={pizza.img}
+  key={pizza.id}
+  name={pizza.name}
+  desc={pizza.desc}
+  ingredients={pizza.ingredients}
+  price={pizza.price}
+  />
+))}
 
-    </>
+
+
+    </div>
   )
 }
 

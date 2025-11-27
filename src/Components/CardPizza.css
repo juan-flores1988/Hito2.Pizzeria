@@ -1,42 +1,40 @@
-.productos{
-    border-radius: 12px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,15.15);
+/* --- CONTENEDOR DE TODAS LAS TARJETAS --- */
+.home-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 15px;
 }
+
+/* --- TARJETA INDIVIDUAL --- */
+.productos img {
+  width: 10PX;
+  max-width: 140PX;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* --- IMAGEN DE CADA TARJETA --- */
+.productos img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 3px 4px 5px rgba(0,0,0,0.25);
+}
+
  
-.productos h4{
-    font-size: 18px;
-    margin-left: 10px;
+.productos h4, h5, h2{
+  text-align: center;
 }
 
-
-
-.ingredientes{
-text-align: center;
-    border-top: 1px solid #dbd8d8;
-    border-bottom: solid #dbd8d8 ;
-}
-
-.ingredientes p{
-    color: rgb(133, 131, 131);
-}
-
-
-.precio{
-    text-align: center;
- 
-
-}
 
 .precio button{
-    margin: 40px;
-    padding: 5px;
-    border-radius: 5px;
+  width: 75px;
+  margin: 3px;
 }
-
-
-.button-background{
-    background-color: rgb(43, 42, 42) ;
-    color: white;
-}
-
-
